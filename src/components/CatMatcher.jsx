@@ -38,6 +38,22 @@ const CatMatcher = () => {
         }
     };
 
+    const handleResetButtonClick = () => {
+        setIsSubmitted(false); // Show selection fields again
+        setCatImage('');
+        setBreedName('');
+        setBreedDescription('');
+        setValues({
+            adaptability: 1,
+            affection_level: 1,
+            energy_level: 1,
+            intelligence: 1,
+            social_needs: 1,
+            stranger_friendly: 1,
+            vocalisation: 1,
+        });
+    };
+
     return (
         <div className="container">
             {!isSubmitted ? (
@@ -73,6 +89,7 @@ const CatMatcher = () => {
                     <img src={catImage} alt={breedName} className="cat-image" />
                     <h3>{breedName}</h3>
                     <p>{breedDescription}</p>
+                    <button onClick={handleResetButtonClick}>Reset</button>
                 </div>
             )}
         </div>
