@@ -7,13 +7,13 @@ const CatMatcher = () => {
     const [breedName, setBreedName] = useState('');
     const [breedDescription, setBreedDescription] = useState('');
     const [values, setValues] = useState({
-        adaptability: 1,
-        affection_level: 1,
-        energy_level: 1,
-        intelligence: 1,
-        social_needs: 1,
-        stranger_friendly: 1,
-        vocalisation: 1,
+        adaptability: 3,
+        affection_level: 3,
+        energy_level: 3,
+        intelligence: 3,
+        social_needs: 3,
+        stranger_friendly: 3,
+        vocalisation: 3,
     });
     const [isSubmitted, setIsSubmitted] = useState(false); // State to manage visibility of selection fields
 
@@ -44,13 +44,13 @@ const CatMatcher = () => {
         setBreedName('');
         setBreedDescription('');
         setValues({
-            adaptability: 1,
-            affection_level: 1,
-            energy_level: 1,
-            intelligence: 1,
-            social_needs: 1,
-            stranger_friendly: 1,
-            vocalisation: 1,
+            adaptability: 3,
+            affection_level: 3,
+            energy_level: 3,
+            intelligence: 3,
+            social_needs: 3,
+            stranger_friendly: 3,
+            vocalisation: 3,
         });
     };
 
